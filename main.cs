@@ -18,10 +18,10 @@ class Program
         };
 
         var listener = new HttpListener();
-        //listener.Prefixes.Add("http://0.0.0.0:8002/");
+        listener.Prefixes.Add("http://0.0.0.0:8002/");
         listener.Prefixes.Add(string.Format("http://*:8002/"));
         // listener.Prefixes.Add(string.Format("http://13.60.181.5:8002/")); 
-         listener.Prefixes.Add(string.Format("http://13.62.98.15:8002/")); 
+        // listener.Prefixes.Add(string.Format("http://13.62.98.15:8002/")); 
         listener.Start();
 
         try
